@@ -1,9 +1,6 @@
-
+OPT=-g
 
 1.exe:1.c 2.c
-	gcc $^ -o $@
-
-
-
+	${LINK.c} ${OPT} -o $@ $^
 clean:
 	rm -rf *.exe
